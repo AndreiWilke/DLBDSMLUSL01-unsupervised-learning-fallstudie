@@ -1,0 +1,3 @@
+,age_scaled,gender_female,role_backend,role_frontend,role_devops,role_leadership,role_enabling,role_one_person_shop,work_multi_role,phys_interview_open_ord,mental_interview_open_ord,career_hurt_ord,coworker_negative_ord,share_family_open_ord,share_family_na,family_history_ord,mh_past_ord,mh_current_ord,mh_diagnosed_bin,mh_treatment_bin,interfere_treated_ord,interfere_treated_na,interfere_untreated_ord,interfere_untreated_na,remote_work_ord
+cluster_0_medoid_row617,1.6007839569695186,0,0,0,0,0,0,0,0,1,0,2,1,3.0,0,2,2,2,1,1,2,0,3,0,1
+cluster_1_medoid_row1024,-0.8776595742684696,0,1,0,0,0,0,0,0,1,0,1,1,3.0,0,0,0,0,0,0,0,1,0,1,1

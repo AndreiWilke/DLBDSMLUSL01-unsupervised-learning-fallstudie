@@ -1,0 +1,22 @@
+variable,decision_class
+Would you be willing to bring up a physical health issue with a potential employer in an interview?,A_core_direct
+Would you bring up a mental health issue with a potential employer in an interview?,A_core_direct
+Do you feel that being identified as a person with a mental health issue would hurt your career?,A_core_direct
+Do you think that team members/co-workers would view you more negatively if they knew you suffered from a mental health issue?,A_core_direct
+How willing would you be to share with friends and family that you have a mental illness?,A_core_direct
+Do you have a family history of mental illness?,A_core_direct
+Have you had a mental health disorder in the past?,A_core_direct
+Do you currently have a mental health disorder?,A_core_direct
+Have you been diagnosed with a mental health condition by a medical professional?,A_core_direct
+Have you ever sought treatment for a mental health issue from a mental health professional?,A_core_direct
+"If you have a mental health issue, do you feel that it interferes with your work when being treated effectively?",A_core_direct
+"If you have a mental health issue, do you feel that it interferes with your work when NOT being treated effectively?",A_core_direct
+Do you work remotely?,A_core_direct
+What is your age?,B_core_after_transform
+What is your gender?,B_core_after_transform
+Which of the following best describes your work position?,B_core_after_transform
+Are you self-employed?,C_profile_only
+Have you observed or experienced an unsupportive or badly handled response to a mental health issue in your current or previous workplace?,C_profile_only
+What country do you live in?,C_profile_only
+What country do you work in?,C_profile_only
+Do you have previous employers?,D_exclude_structural
