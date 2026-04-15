@@ -5,21 +5,36 @@ Kurs: Maschinelles Lernen – Unsupervised Learning und Feature Engineering
 Verfasser: Andrei Wilke | Matrikelnummer: IU14128673
 Stand: 15.04.2026 (technische Endfassung des Notebooks)
 
-Dieses Repository enthält den technischen Projektkern: Hauptnotebook, Rohdaten, reproduzierbare Ergebnistabellen und Abbildungen. Der schriftliche Fallstudienbericht wird auf Basis dieses Notebook-Stands in einem separaten Arbeitsschritt als `.docx` / `.pdf` erstellt und ergänzt.
+Dieses Repository enthält den technischen Projektkern: Hauptnotebook, Rohdaten sowie den schriftlichen Fallstudienbericht (`reports/DLBDSMLUSL01_IU14128673_Andrei_Wilke_Fallstudie1.docx` / `.pdf`). Die Ergebnistabellen (`reports/tables/`), Abbildungen (`reports/figures/`) und Notebook-Checkpoints (`artifacts/checkpoints/`) werden beim lokalen Ausführen des Notebooks reproduzierbar erzeugt und sind nicht zwingend Bestandteil des versionierten Git-Stands.
 
 ---
 
-## Projektstruktur
+## Projektstruktur (versioniert)
 
 ```
 ├── notebooks/
 │   └── fallstudie1_main.ipynb                        ← Hauptnotebook (vollständig ausgeführt)
+├── data/
+│   └── raw/
+│       └── mental_health_tech_2016.csv               ← Rohdaten (OSMI 2016, 1.433 × 63)
 ├── reports/
-│   ├── figures/                                      ← exportierte Abbildungen (PNG)
+│   ├── DLBDSMLUSL01_IU14128673_Andrei_Wilke_Fallstudie1.docx   ← schriftlicher Bericht
+│   └── DLBDSMLUSL01_IU14128673_Andrei_Wilke_Fallstudie1.pdf    ← Bericht als PDF
+├── .gitignore
+└── README.md
+```
+
+## Lokal erzeugte Ordner (nicht versioniert)
+
+Die folgenden Verzeichnisse werden beim Ausführen des Notebooks automatisch angelegt und befüllt:
+
+```
+├── reports/
+│   ├── figures/                                      ← Abbildungen (PNG)
 │   │   ├── method_comparison_overview.png
 │   │   ├── method_silhouette_k2_k4.png
 │   │   └── pca_cluster_final.png
-│   └── tables/                                       ← exportierte Ergebnistabellen (CSV)
+│   └── tables/                                       ← Ergebnistabellen (CSV)
 │       ├── 01_sichtungsprotokoll.csv
 │       ├── 02_decision_df.csv
 │       ├── 03_method_eval.csv
@@ -33,20 +48,15 @@ Dieses Repository enthält den technischen Projektkern: Hauptnotebook, Rohdaten,
 │       ├── 11_hr_actions_by_cluster.csv
 │       ├── 12_medoids_k2.csv
 │       └── 13_pam_stability_k2.csv
-├── data/
-│   └── raw/
-│       └── mental_health_tech_2016.csv               ← Rohdaten (OSMI 2016, 1.433 × 63)
-├── artifacts/
-│   └── checkpoints/                                  ← Notebook-Checkpoints (nicht prüfungsrelevant)
-├── .gitignore
-└── README.md
+└── artifacts/
+    └── checkpoints/                                  ← Notebook-Checkpoints (nicht prüfungsrelevant)
 ```
 
 ---
 
 ## Methodischer Stand
 
-Das Notebook vergleicht drei Clusterverfahren auf demselben Merkmalsraum (25 gemischte Features: stetig, ordinal, binär) jeweils über k = 2 bis 8 und wählt die finale Lösung daraus aus:
+Das Notebook vergleicht drei Clusterverfahren auf demselben Merkmalsraum (25 gemischte Features: 1 stetig, 11 ordinal, 6 binär/NA-Flag, 7 multi-hot Rollen- und Arbeitskontextindikatoren) jeweils über k = 2 bis 8 und wählt die finale Lösung daraus aus:
 
 1. **k-Means (euklidisch, StandardScaler)** – Baseline.
 2. **PAM / FasterPAM auf Gower-Distanz** – passendes Verfahren für gemischte Merkmalstypen.
@@ -71,7 +81,7 @@ pip install pandas numpy scikit-learn matplotlib seaborn joblib gower kmedoids s
 
 ### Notebook ausführen
 
-Das Notebook ist self-contained und löst Pfade automatisch auf. Die Ordnerstruktur (`data/raw/`, `reports/`) muss erhalten bleiben.
+Das Notebook ist self-contained und löst Pfade automatisch auf. Die Ordner `reports/tables/`, `reports/figures/` und `artifacts/checkpoints/` werden beim Ausführen automatisch erzeugt; nur `data/raw/mental_health_tech_2016.csv` muss vorhanden sein.
 
 ```bash
 cd notebooks/
