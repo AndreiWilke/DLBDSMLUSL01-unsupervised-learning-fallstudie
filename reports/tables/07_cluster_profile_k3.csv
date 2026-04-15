@@ -1,4 +1,0 @@
-cluster_final_k3,age_scaled,gender_female,role_backend,role_frontend,role_devops,role_leadership,role_enabling,role_one_person_shop,work_multi_role,phys_interview_open_ord,mental_interview_open_ord,career_hurt_ord,coworker_negative_ord,share_family_open_ord,share_family_na,family_history_ord,mh_past_ord,mh_current_ord,mh_diagnosed_bin,mh_treatment_bin,interfere_treated_ord,interfere_treated_na,interfere_untreated_ord,interfere_untreated_na,remote_work_ord
-0,0.164,0.342,0.246,0.134,0.119,0.202,0.198,0.1,0.132,0.887,0.35,1.512,1.24,2.599,0.008,1.486,1.762,1.546,0.815,0.883,1.45,0.053,2.541,0.015,0.991
-1,-0.061,0.152,0.547,0.323,0.191,0.242,0.194,0.084,0.382,0.972,0.583,1.284,0.965,2.534,0.189,0.58,0.336,0.242,0.026,0.128,0.101,0.908,0.319,0.831,0.987
-2,-0.149,0.214,0.861,0.71,0.32,0.281,0.368,0.173,0.919,0.981,0.443,1.181,0.833,2.786,0.014,1.429,1.68,1.468,0.755,0.841,1.206,0.095,2.435,0.019,1.061

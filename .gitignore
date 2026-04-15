@@ -45,3 +45,5 @@ artifacts/
 *.pkl
 *.joblib
 .cache/
+
+reports/
