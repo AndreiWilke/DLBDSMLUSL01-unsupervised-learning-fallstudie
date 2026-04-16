@@ -1,4 +1,4 @@
-﻿# Fallstudie 1 – DLBDSMLUSL01_D
+# Fallstudie 1 – DLBDSMLUSL01_D
 
 **Thema:** Psychische Gesundheit in technologiebezogenen Berufen  
 **Kurs:** Maschinelles Lernen – Unsupervised Learning und Feature Engineering  
