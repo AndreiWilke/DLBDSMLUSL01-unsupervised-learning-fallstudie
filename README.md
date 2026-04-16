@@ -5,7 +5,7 @@ Kurs: Maschinelles Lernen – Unsupervised Learning und Feature Engineering
 Verfasser: Andrei Wilke | Matrikelnummer: IU14128673
 Stand: 15.04.2026 (technische Endfassung des Notebooks)
 
-Dieses Repository enthält den technischen Projektkern: Hauptnotebook, Rohdaten sowie den schriftlichen Fallstudienbericht (`reports/DLBDSMLUSL01_IU14128673_Andrei_Wilke_Fallstudie1.docx` / `.pdf`). Die Ergebnistabellen (`reports/tables/`), Abbildungen (`reports/figures/`) und Notebook-Checkpoints (`artifacts/checkpoints/`) werden beim lokalen Ausführen des Notebooks reproduzierbar erzeugt und sind nicht zwingend Bestandteil des versionierten Git-Stands.
+Dieses Repository enthält den reproduzierbaren Analyse-Code, das Hauptnotebook und den verwendeten Rohdatensatz. Der schriftliche Fallstudienbericht wird separat eingereicht und ist nicht Teil des versionierten Repositories. Ergebnistabellen (`reports/tables/`), Abbildungen (`reports/figures/`) und Notebook-Checkpoints (`artifacts/checkpoints/`) werden beim Ausführen des Notebooks lokal erzeugt.
 
 ---
 
@@ -17,9 +17,6 @@ Dieses Repository enthält den technischen Projektkern: Hauptnotebook, Rohdaten 
 ├── data/
 │   └── raw/
 │       └── mental_health_tech_2016.csv               ← Rohdaten (OSMI 2016, 1.433 × 63)
-├── reports/
-│   ├── DLBDSMLUSL01_IU14128673_Andrei_Wilke_Fallstudie1.docx   ← schriftlicher Bericht
-│   └── DLBDSMLUSL01_IU14128673_Andrei_Wilke_Fallstudie1.pdf    ← Bericht als PDF
 ├── .gitignore
 └── README.md
 ```
